@@ -46,7 +46,7 @@ export default function Home() {
       }}
     >
       <Grid container spacing={4}>
-        <Grid size={{ xs: 12 }} sx={{ px: 6 }}>
+        <Grid size={{ xs: 12 }} sx={{ px: { xs: 3, sm: 6 } }}>
           <Box component="section">
             <Typography
               variant="h3"
@@ -78,12 +78,13 @@ export default function Home() {
         </Grid> */}
 
         <Grid
-          size={{ xs: 12 }}
+          container
           sx={{
             display: "flex",
             backgroundColor: theme.palette.primary.dark,
             color: theme.palette.text.secondary,
             py: 3,
+            width: 1,
           }}
         >
           <Grid
@@ -177,7 +178,7 @@ export default function Home() {
           </Grid>
         </Grid>
 
-        <Grid size={{ xs: 12 }}>
+        <Grid size={{ xs: 12 }} sx={{ px: { xs: 3, sm: 6 } }}>
           <Box sx={{ textAlign: "center" }}>
             <Typography
               variant="h4"
@@ -193,7 +194,7 @@ export default function Home() {
           </Box>
         </Grid>
 
-        <Grid container sx={{ px: 6 }}>
+        <Grid container sx={{ px: { xs: 3, sm: 6 } }}>
           {services.map(({ icon, title, description }, index) => (
             <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index}>
               <Card

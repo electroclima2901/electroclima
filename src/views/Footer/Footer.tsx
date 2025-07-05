@@ -114,7 +114,7 @@ function Footer() {
       <Box
         sx={{
           py: 2,
-          px: 3,
+          px: { xs: 3, sm: 6 },
           backgroundColor: theme.palette.grey[900],
           textAlign: "center",
         }}

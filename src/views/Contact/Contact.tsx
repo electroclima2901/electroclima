@@ -9,7 +9,7 @@ export default function Contact() {
     <Container maxWidth="xl">
       <Grid container spacing={4} sx={{ py: 4 }}>
         {/* Αριστερή Στήλη */}
-        <Grid size={{ xs: 12, sm: 6 }} sx={{ px: 6 }}>
+        <Grid size={{ xs: 12, sm: 6 }} sx={{ px: { xs: 3, sm: 6 } }}>
           <Box component="section">
             <Typography
               variant="h3"
@@ -83,7 +83,10 @@ export default function Contact() {
         </Grid>
 
         {/* Δεξιά Στήλη - Χάρτης */}
-        <Grid size={{ xs: 12, sm: 6 }} sx={{ minHeight: "30rem", px: 6 }}>
+        <Grid
+          size={{ xs: 12, sm: 6 }}
+          sx={{ minHeight: "30rem", px: { xs: 3, sm: 6 } }}
+        >
           <Box component="section" sx={{ width: 1, height: 1 }}>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13019.242186082625!2d25.078325793199024!3d35.33552580277488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x149a59fdca4e0163%3A0xd2687dbd4a417b17!2zzqXOs861zq_Osc-CIDMsIM6TzqzOts65IDcxNCAxNA!5e0!3m2!1sel!2sgr!4v1751706408401!5m2!1sel!2sgr"
