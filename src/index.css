@@ -53,10 +53,3 @@ body {
   font-weight: 200;
   font-style: normal;
 }
-
-@font-face {
-  font-family: "SalonikiaVKF";
-  src: url("/fonts/salonikia_VKF/SalonikiaVKF.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
