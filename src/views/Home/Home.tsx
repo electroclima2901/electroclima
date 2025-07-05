@@ -46,7 +46,7 @@ export default function Home() {
       }}
     >
       <Grid container spacing={4}>
-        <Grid size={{ xs: 12 }}>
+        <Grid size={{ xs: 12 }} sx={{ px: 6 }}>
           <Box component="section">
             <Typography
               variant="h3"
@@ -193,62 +193,68 @@ export default function Home() {
           </Box>
         </Grid>
 
-        {services.map(({ icon, title, description }, index) => (
-          <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index}>
-            <Card
-              sx={{
-                height: "100%",
-                boxShadow: 6,
-                bgcolor: "background.paper",
-                transition: "transform 0.3s ease, boxShadow 0.3s ease",
-                "&:hover": {
-                  boxShadow: 12,
-                  transform: "translateY(-8px)",
-                },
-                p: 2,
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-              }}
-            >
-              <CardContent
+        <Grid container sx={{ px: 6 }}>
+          {services.map(({ icon, title, description }, index) => (
+            <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index}>
+              <Card
                 sx={{
+                  height: "100%",
+                  boxShadow: 6,
+                  bgcolor: "background.paper",
+                  transition: "transform 0.3s ease, boxShadow 0.3s ease",
+                  "&:hover": {
+                    boxShadow: 12,
+                    transform: "translateY(-8px)",
+                  },
+                  p: 2,
                   display: "flex",
                   flexDirection: "column",
-                  alignItems: "center",
-                  height: "100%",
+                  justifyContent: "center",
                 }}
               >
-                <Box
+                <CardContent
                   sx={{
-                    mb: 3,
-                    minHeight: 80,
                     display: "flex",
+                    flexDirection: "column",
                     alignItems: "center",
-                    justifyContent: "center",
+                    height: "100%",
                   }}
                 >
-                  {icon}
-                </Box>
+                  <Box
+                    sx={{
+                      mb: 3,
+                      minHeight: 80,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    {icon}
+                  </Box>
 
-                <Typography
-                  variant="h5"
-                  component="h3"
-                  gutterBottom
-                  align="center"
-                  fontWeight="bold"
-                  sx={{ minHeight: 56 }}
-                >
-                  {title}
-                </Typography>
+                  <Typography
+                    variant="h5"
+                    component="h3"
+                    gutterBottom
+                    align="center"
+                    fontWeight="bold"
+                    sx={{ minHeight: 56 }}
+                  >
+                    {title}
+                  </Typography>
 
-                <Typography variant="body1" align="center" sx={{ flexGrow: 1 }}>
-                  {description}
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-        ))}
+                  <Typography
+                    variant="body1"
+                    align="center"
+                    sx={{ flexGrow: 1 }}
+                  >
+                    {description}
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
       </Grid>
     </Container>
   );

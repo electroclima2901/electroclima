@@ -154,7 +154,7 @@ export function Services() {
             </Box>
           </Grid>
 
-          <Grid size={{ xs: 12, sm: 8 }}>
+          <Grid size={{ xs: 12, sm: 8 }} sx={{ px: 6 }}>
             <Box
               component="section"
               sx={{ display: "flex", flexDirection: "column", gap: 5 }}
@@ -186,7 +186,7 @@ export function Services() {
             </Box>
           </Grid>
 
-          <Grid size={{ xs: 12, sm: 4 }} sx={{ padding: "0 0 0 1rem" }}>
+          <Grid size={{ xs: 12, sm: 4 }} sx={{ px: 6 }}>
             <Grid
               size={{ xs: 12 }}
               sx={{
