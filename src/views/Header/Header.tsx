@@ -33,7 +33,6 @@ function Header() {
   const pages = [
     { name: t("header.home"), link: "/" },
     { name: t("header.services"), link: "/services" },
-    { name: t("header.about"), link: "/about" },
     { name: t("header.contact"), link: "/contact" },
   ];
 

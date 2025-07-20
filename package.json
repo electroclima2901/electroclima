@@ -1,11 +1,13 @@
 {
   "name": "electroclima",
+  "homepage": "https://www.electroclima-energy.gr",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "start": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && npm run postbuild",
+    "postbuild": "cp build/index.html build/404.html",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "preview": "vite preview",

@@ -176,7 +176,7 @@ export function Services() {
                 </Typography>
               </Box>
               <Box>
-                <Typography variant="h6" sx={{ textAlign: "justify" }}>
+                <Typography variant="h5" sx={{ textAlign: "justify" }}>
                   {t("services.text5")}
                 </Typography>
                 <Typography variant="body1" sx={{ textAlign: "justify" }}>
