@@ -53,11 +53,11 @@ export default function Contact() {
                 ✉️ <strong>{t("contact.email")}</strong>
                 <br />
                 <Link
-                  href="mailto:info@electroclima.gr"
+                  href="mailto:electroclima2901@gmail.com"
                   underline="hover"
                   color="inherit"
                 >
-                  info@electroclima.gr
+                  electroclima2901@gmail.com
                 </Link>
               </Typography>
 
